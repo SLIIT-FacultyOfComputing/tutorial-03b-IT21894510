@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 using namespace std;
 int main() {
@@ -9,4 +10,24 @@ int main() {
           <<  names[r]
           << marks[r] << endl;
  }
+}*/
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main ()
+{
+  float marks[5] = {78.4, 90.6, 45.9, 72.2, 54.4};
+  char names[][20] = {"Ajith", "Wimal", "Kanthi", "Suranji", 
+  "Kushmitha"};
+cout << "No\t" << " Name\t" << " Marks"<<endl;
+  for(int  r =0; r < 5; r++)
+    {
+      cout<< r+ 1
+          <<setw(10)<<setprecision(5)<<names[r]
+          <<setw(6)<<setprecision(5)<<marks[r] << endl;
+    }
+
+  
+  
 }
